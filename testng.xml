@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org">
+<suite name="SauceDemo Automation Suite">
+    <test name="Login and Inventory Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.InventoryTest"/>
+        </classes>
+    </test>
+</suite>
