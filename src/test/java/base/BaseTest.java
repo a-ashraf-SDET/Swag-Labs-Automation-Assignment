@@ -12,14 +12,19 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        ChromeOptions options = new ChromeOptions();
+        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
 
-        driver = new ChromeDriver(options);
+        java.util.HashMap<String, Object> prefs = new java.util.HashMap<>();
+        prefs.put("profile.password_manager_leak_detection", false);
+        options.setExperimentalOption("prefs", prefs);
+
+        driver = new org.openqa.selenium.chrome.ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://www.saucedemo.com/");
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        driver.get("https://saucedemo.com");
     }
+
 
     @AfterMethod
     public void tearDown() {

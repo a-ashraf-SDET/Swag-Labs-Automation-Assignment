@@ -6,5 +6,15 @@
   "invalidUser": {
     "username": "invalid_user",
     "password": "wrong_password"
-  }
+  },
+  "productDetails": {
+    "name": "Sauce Labs Backpack",
+    "expectedPrice": "$29.99",
+    "expectedImage": "sauce-backpack-1200x1500-CjRW-Djj.jpg"
+  },
+  "cartProducts": [
+    "Sauce Labs Backpack",
+    "Sauce Labs Bolt T-Shirt",
+    "Sauce Labs Onesie"
+  ]
 }

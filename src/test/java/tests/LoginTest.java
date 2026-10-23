@@ -23,7 +23,6 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         JsonObject validUser = testData.getAsJsonObject("validUser");
 
-        // استخدام getAsString لمنع ظهور علامات التنصيص الزائدة
         loginPage.login(validUser.get("username").getAsString(), validUser.get("password").getAsString());
 
         Assert.assertTrue(driver.getCurrentUrl().contains("/inventory.html"));
