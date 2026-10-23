@@ -103,6 +103,7 @@ SwagLabsAutomationAssignment/
 Below is the execution dashboard demonstrating a **100% success rate** across all 12 components:
 
 ![Allure Test Execution Report](./allure report After Add New Part.png)
+
 ## Getting Started
 
 ### Prerequisites
